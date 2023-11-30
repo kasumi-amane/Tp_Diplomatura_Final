@@ -1,0 +1,32 @@
+<!-- views/delete-user.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Borrar Usuario</title>
+</head>
+<body class="formPages">
+    <div class="formPages_wrp">
+        <form action="/delete-user" method="POST">
+            <h1>Borrar cuenta</h1>
+            <div class="formPages_input">
+                <label>usuario:</label>
+                <br>
+                <input name="username" id="username" type="text" placeholder="Usuario" required/>
+            </div>
+            <div class="formPages_input">
+                <label>contraseña:</label>
+                <br>
+                <input type="password" id="password" name="password" placeholder="Nueva Contraseña" required/> 
+            </div>
+            {{#if error}}
+                <p style="color: red">{{error}}</p>
+            {{/if}}
+            <input class="submit" type="submit" value="Borrar usuario" />
+        </form>
+    </div>
+</body>
+</html>

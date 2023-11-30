@@ -1,0 +1,30 @@
+
+$black: #000000;
+$white: #ffffff;
+$grey: #091d38;
+$primary:#260477;
+$primary2: #4d28aa;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+//Font:
+@font-face {
+    font-family: 'primary_font';
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/BASARA.ttf);
+}
+
+.flex{
+    display: flex!important;
+}
+
+body{
+    position: relative;
+    background-color: #f7f7f7;
+}
+

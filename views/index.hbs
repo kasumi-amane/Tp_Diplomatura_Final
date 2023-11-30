@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/index.css">
+  <title>Index</title>
+</head>
+<body class="landingPage">
+
+      <section class="landingPage_left">
+          <div class="landingPage_left_wrp">
+            <h1>¡Bienvenido!</h1>
+            <h2>Ingresa a tu cuenta</h2>
+            <div class="formPages">
+                <form action="/login" method="post">
+                  <h3>Iniciar sesion</h3>
+                  <div class="formPages_input">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" name="username" required>
+                  </div>
+                  <div class="formPages_input">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                  </div>
+                  <button class="submit" type="submit">Iniciar sesión</button>
+                  <div class="formPages_links">
+                    <a class="formPages_links_link"  href="/register">Registrarse</a>
+                    <a class="formPages_links_link" href="/change-password">Cambiar Contraseña</a>
+                  </div>
+              </form>
+            </div>
+          </div>
+      </section>
+      <section class="landingPage_right">
+        <h2>Contactame</h2>
+        <form action="/enviar-correo" method="post" class="formulario">
+          <div class="formulario_top">
+            <div class="formulario_top_input">
+              <label >Nombre y Apellido:</label>
+              <input name="nombre" type="text" placeholder="Ingresar Nombre" required>
+            </div>
+            <div class="formulario_top_input">
+              <label >Correo Electronico:</label>
+              <input name="email" type="mail" placeholder="Ingresar e-mail" required>
+            </div>
+          </div>
+          <div class="formulario_bottom">
+            <label >Mensaje:</label>
+            <textarea name="mensaje" id="mensaje-formulario" placeholder="Escriba su mensaje" required></textarea>
+          </div>
+          <input class="formulario_submit" type="submit" placeholder="Inviar ">
+        </form>
+      </section>
+
+</body>
+</html>
